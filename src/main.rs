@@ -38,4 +38,19 @@ fn main() {
         MultiType::Text(String::from("Hello")),
         MultiType::Float(10.12),
     ];
+
+    let mut s = String::from("Intial contents");
+    s.push_str(" ADDED CONTENTS");
+    println!("{s}");
+    s.push('u');
+    println!("{s}");
+    let s1 = String::from("Hello, ");
+    let s2 = String::from("world!");
+    let s3 = s1 + &s2;
+    println!("{s3}");
+    let s4 = String::from("Test");
+    for i in s4.chars() {
+        println!("{i}");
+    }
+    
 }
